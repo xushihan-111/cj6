@@ -31,6 +31,19 @@ const applications = [
   "Warbird Collection",
 ]
 
+const globalGallery = [
+  "/19.jpg",
+  "/20.png",
+  "/21.jpg",
+  "/22.png",
+  "/23.jpg",
+  "/24.png",
+  "/25.jpg",
+  "/26.png",
+  "/27.png",
+  "/28.jpg",
+]
+
 export function GlobalPresence() {
   return (
     <section id="global" className="py-24 px-4 sm:px-6 lg:px-8">
@@ -59,6 +72,29 @@ export function GlobalPresence() {
               </div>
             )
           })}
+        </div>
+
+        <div className="mb-16">
+          <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6 font-light text-center">
+            Global Gallery
+          </p>
+          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-thin">
+            {globalGallery.map((src, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-72 sm:w-80 aspect-[4/3] snap-center overflow-hidden rounded-lg border border-border group"
+              >
+                <img
+                  src={src}
+                  alt={`Global CJ6 Gallery ${index + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-muted-foreground/60 font-light text-center mt-2">
+            ← Swipe to explore →
+          </p>
         </div>
 
         <div className="text-center">

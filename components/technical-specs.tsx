@@ -46,7 +46,7 @@ export function TechnicalSpecs() {
         { label: "Wing Root Airfoil", value: "NACA 23016" },
         { label: "Wingtip Airfoil", value: "NACA 4412" },
       ],
-      gallery: ["/4..jpg", "/5..jpg", "/6..jpg"],
+      gallery: ["/4..jpg", "/777.png", "/6..jpg"],
     },
     {
       icon: Gauge,
