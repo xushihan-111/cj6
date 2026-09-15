@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Plane, GraduationCap, Hand, Monitor, Sprout, X, type LucideIcon } from "lucide-react"
+import { Plane, GraduationCap, Hand, Monitor, Sprout, Wrench, X, type LucideIcon } from "lucide-react"
 
 interface ServiceDetail {
   description: string
@@ -134,6 +134,16 @@ const services: Service[] = [
       },
     ],
   },
+  {
+    icon: Wrench,
+    title: "Spare Parts Support Supply",
+    description: "Genuine CJ6 spare parts and maintenance support to keep your aircraft airworthy.",
+    detail: {
+      description:
+        "Yaohu Flight Base provides a comprehensive spare parts supply chain and technical support network for CJ6 operators worldwide. From routine consumables to major structural components, we offer genuine parts with full traceability and export documentation. Our team of seasoned maintenance specialists is available for on-site technical assistance and remote troubleshooting, ensuring your aircraft stays airworthy and safe.",
+      images: ["/222.png", "/40.jpg", "/41.jpg"],
+    },
+  },
 ]
 
 export function FeaturedCollections() {
@@ -149,7 +159,7 @@ export function FeaturedCollections() {
           </p>
           <h2 className="text-4xl md:text-5xl font-light text-foreground tracking-tight">Experience the Legend</h2>
           <p className="text-lg font-light text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Beyond preserving history, Nanchang Yaohu Flight Base lets you live it. Explore our five core programs.
+            Beyond preserving history, Nanchang Yaohu Flight Base lets you live it. Explore our six core programs.
           </p>
         </div>
 
@@ -228,22 +238,24 @@ export function FeaturedCollections() {
                 {activeService.detail.description}
               </p>
 
-              <div className="space-y-2 mb-6">
-                <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground font-light">
-                  Gallery
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {activeService.detail.images.map((src, i) => (
-                    <div key={src} className="aspect-[4/3] overflow-hidden rounded-md border border-border">
-                      <img
-                        src={src}
-                        alt={`${activeService.title} ${i + 1}`}
-                        className="w-full h-full object-cover hover:scale-[1.03] transition-transform duration-500"
-                      />
-                    </div>
-                  ))}
+              {activeService.detail.images.length > 0 && (
+                <div className="space-y-2 mb-6">
+                  <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground font-light">
+                    Gallery
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {activeService.detail.images.map((src, i) => (
+                      <div key={src} className="aspect-[4/3] overflow-hidden rounded-md border border-border">
+                        <img
+                          src={src}
+                          alt={`${activeService.title} ${i + 1}`}
+                          className="w-full h-full object-cover hover:scale-[1.03] transition-transform duration-500"
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
               <div className="flex justify-end pt-4 border-t border-border">
                 <Button
