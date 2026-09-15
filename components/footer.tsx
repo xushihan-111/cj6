@@ -89,6 +89,11 @@ export function Footer() {
                   Youth Academy
                 </a>
               </li>
+              <li>
+                <a href="#base" className="hover:opacity-100 transition-opacity">
+                  Spare Parts Supply
+                </a>
+              </li>
             </ul>
           </div>
         </div>
