@@ -38,7 +38,7 @@ export function TechnicalSpecs() {
       specs: [
         { label: "Wingspan", value: "10.18 m" },
         { label: "Length", value: "12.92 m" },
-        { label: "Height", value: "2.94 m" },
+        { label: "Height", value: "3.25 m" },
         { label: "Wing Area", value: "17.0 m²" },
         { label: "Empty Weight", value: "1,172 kg" },
         { label: "Max Takeoff Weight", value: "1,419 kg" },
