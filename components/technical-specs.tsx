@@ -37,7 +37,7 @@ export function TechnicalSpecs() {
       title: "Airframe & Structure",
       specs: [
         { label: "Wingspan", value: "10.22 m" },
-        { label: "Length", value: "12.92 m" },
+        { label: "Length", value: "8.46 m" },
         { label: "Height", value: "3.25 m" },
         { label: "Wing Area", value: "17.0 m²" },
         { label: "Empty Weight", value: "1,172 kg" },
