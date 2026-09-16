@@ -51,8 +51,7 @@ export function TechnicalSpecs() {
       title: "Powerplant & Performance",
       specs: [
         { label: "Engine", value: "HS-6A 9-Cylinder Radial" },
-        { label: "Takeoff Power", value: "285 hp @ 2,350 rpm" },
-        { label: "Rated Power", value: "270 hp @ 2,250 rpm" },
+        { label: "Rated Power", value: "199 kw (2,250 rpm)" },
         { label: "Propeller", value: "2-Blade Constant-Speed Metal" },
         { label: "Max Speed (SL)", value: "286 km/h" },
         { label: "Cruise Speed", value: "170 km/h" },
