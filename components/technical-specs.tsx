@@ -58,7 +58,7 @@ export function TechnicalSpecs() {
         { label: "Service Ceiling", value: "5,000 m" },
         { label: "Range", value: "640 km" },
         { label: "Endurance", value: "3.6 h" },
-        { label: "Takeoff Roll", value: "280 m" },
+        { label: "Takeoff Roll", value: "240 m" },
       ],
       gallery: ["/15.jpg", "/8.jpg", "/9.jpg"],
     },
