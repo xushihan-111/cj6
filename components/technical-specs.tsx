@@ -42,7 +42,7 @@ export function TechnicalSpecs() {
         { label: "Wing Area", value: "17.0 m²" },
         { label: "Empty Weight", value: "1105 kg" },
         { label: "Max Takeoff Weight", value: "1418 kg" },
-        { label: "Fuel Capacity", value: "110 kg" },
+        { label: "Fuel Capacity", value: "162 l" },
         { label: "Wing Root Airfoil", value: "NACA 23016" },
         { label: "Wingtip Airfoil", value: "NACA 4412" },
       ],
